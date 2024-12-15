@@ -1,0 +1,100 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <style>
+        body, html {
+            margin: 0;
+            padding: 0;
+            width: 100%;
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background: linear-gradient(to bottom, #00c6ff, #0072ff);
+            font-family: Arial, sans-serif;
+        }
+        .login-container {
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 20px;
+            padding: 40px;
+            width: 300px;
+            text-align: center;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+        .login-container h1 {
+            color: white;
+            font-size: 2em;
+            margin-bottom: 20px;
+        }
+        .input-group {
+            margin-bottom: 20px;
+            position: relative;
+        }
+        .input-group input {
+            width: 100%;
+            padding: 10px 40px;
+            border: none;
+            border-radius: 20px;
+            background: rgba(255, 255, 255, 0.2);
+            color: white;
+            font-size: 1em;
+        }
+        .input-group i {
+            position: absolute;
+            left: 10px;
+            top: 50%;
+            transform: translateY(-50%);
+            color: white;
+        }
+        .options {
+            display: flex;
+            justify-content: space-between;
+            color: white;
+            font-size: 0.9em;
+            margin-bottom: 20px;
+        }
+        .login-btn {
+            background: black;
+            border: none;
+            border-radius: 20px;
+            padding: 10px;
+            width: 100%;
+            color: white;
+            font-size: 1em;
+            cursor: pointer;
+        }
+        .register {
+            color: white;
+            font-size: 0.9em;
+        }
+        .register a {
+            color: black;
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="login-container">
+        <h1>Login</h1>
+        <div class="input-group">
+            <i class="fas fa-user"></i>
+            <input type="text" placeholder="Username">
+        </div>
+        <div class="input-group">
+            <i class="fas fa-lock"></i>
+            <input type="password" placeholder="Password">
+        </div>
+        <div class="options">
+            <label><input type="checkbox"> Remember me</label>
+            <a href="#">Forgot password?</a>
+        </div>
+        <button class="login-btn">Login</button>
+        <div class="register">
+            Don't have an account? <a href="#">Register</a>
+        </div>
+    </div>
+</body>
+</html>
